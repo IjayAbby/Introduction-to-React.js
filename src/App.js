@@ -19,8 +19,7 @@ const list = [
   }
 ]
 
-function App() {
-  return (
+const App = () => (
     <div>
       <h1>My Hacker Stories</h1>
 
@@ -29,13 +28,11 @@ function App() {
 
       <hr />
       <List />
-      <List />
     </div>
   );
-}
 
-function List() {
-  return (
+
+const List = () =>(
     <ul>
       {list.map(function (item) {
         return (
@@ -51,6 +48,5 @@ function List() {
       })}
     </ul>
   );
-}
 
 export default App;
